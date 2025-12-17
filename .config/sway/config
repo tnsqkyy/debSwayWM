@@ -1,0 +1,22 @@
+# Main Sway configuration
+
+# Set configuration path
+set $config_path "$HOME/.config/sway"
+
+# General settings
+include $config_path/config.d/variables
+include $config_path/config.d/sessionSettings
+include $config_path/config.d/decorations
+
+# Keybindings
+include $config_path/config.d/keybindings/basics
+include $config_path/config.d/keybindings/layouts
+include $config_path/config.d/keybindings/movements
+include $config_path/config.d/keybindings/resizing
+include $config_path/config.d/keybindings/workspaces
+
+# Bar configuration
+include $config_path/config.d/bar/waybar
+
+# Colorscheme
+include $config_path/config.d/colorschemes/cosmicTwilight

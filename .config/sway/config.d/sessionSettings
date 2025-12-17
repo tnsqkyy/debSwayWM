@@ -1,0 +1,21 @@
+# Input and Session Settings
+
+# Input device configuration
+#
+# My preference for pointer acceleration (commented out)
+# input type:pointer {
+#     accel_profile flat
+#     pointer_accel -0.6
+# }
+
+# Idle and suspend script
+exec $config_path/scripts/swayidle.sh
+
+# Startup applications
+xwayland force
+
+# Autotiling
+exec --no-startup-id autotiling
+
+# Set wallpaper
+exec swaybg -i $HOME/.config/sway/wallpapers/marek-piwnicki.jpg -m fill
