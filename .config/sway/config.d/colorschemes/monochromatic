@@ -1,0 +1,13 @@
+# Define colors (White, Black, and Grey Palette)
+set $black #000000
+set $white #FFFFFF
+set $grey_dark #333333
+set $grey_medium #666666
+set $grey_light #CCCCCC
+
+# Client border colors
+# class                 border           backgr.          text             indicat.         child_border
+client.focused          $white           $grey_dark       $black           $grey_medium     $white
+client.focused_inactive $grey_medium     $grey_medium     $grey_light      $black           $black
+client.unfocused        $grey_medium     $grey_medium     $grey_light      $black           $black
+client.urgent           $white           $white           $black           $grey_dark       $white

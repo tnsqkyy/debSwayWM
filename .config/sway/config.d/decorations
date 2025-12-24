@@ -1,0 +1,10 @@
+# Window decorations
+
+# Gaps and Borders
+gaps inner 5
+gaps outer 5
+default_border pixel 1
+default_floating_border pixel 0
+
+# Opacity (SUPPORTED)
+for_window [app_id=".*"] opacity 1

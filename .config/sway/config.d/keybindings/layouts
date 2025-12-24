@@ -1,0 +1,21 @@
+# Layout keybindings
+# Split container
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Switch container layout style
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Toggle fullscreen
+bindsym $mod+f fullscreen
+
+# Toggle floating mode
+bindsym $mod+Shift+f floating toggle
+
+# Focus mode toggle
+bindsym $mod+space focus mode_toggle
+
+# Focus parent container
+bindsym $mod+a focus parent

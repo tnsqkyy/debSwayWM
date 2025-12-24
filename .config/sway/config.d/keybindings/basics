@@ -1,0 +1,22 @@
+# Basic keybindings
+bindsym $mod+q kill
+bindsym $mod+Shift+r reload
+floating_modifier $mod normal
+bindsym $mod+d exec $menu
+bindsym $mod+Return exec $terminal
+
+# Audio controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Brightness controls
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+# Microphone control
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Screenshot
+bindsym $mod+s exec $config_path/screenshot.sh
+
