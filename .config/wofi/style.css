@@ -1,0 +1,53 @@
+/* Define colors for the white, black, grey theme */
+@define-color black #000000;
+@define-color white #FFFFFF;
+@define-color grey_dark #333333;
+@define-color grey_medium #666666;
+@define-color grey_light #CCCCCC;
+
+window {
+    font-family: "JetBrainsMono Nerd Font", "Nerd Font";
+    background-color: @black;
+    border: 1px solid @grey_light;
+    border-radius: 0;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    padding: 8px;
+    background-color: @black;
+    color: @white;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: @black;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: @black;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: @grey_medium;
+}
+
+#entry:selected {
+    background-color: @grey_dark;
+    color: @white;
+}
+
+#prompt {
+    color: @white;
+}
