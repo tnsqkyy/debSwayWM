@@ -1,4 +1,0 @@
-# Display settings
-# Configure output resolution and refresh rate
-
-output eDP-1 resolution 1920x1200@60Hz
